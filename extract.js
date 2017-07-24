@@ -8,7 +8,7 @@ function extract(side, formattedTerms) {
 		// initialize a map to store symbols and their subscripts
 		side[term] = new Map();
 
-		t = formattedTerms[term];
+		var t = formattedTerms[term];
 		var secondParen = null;
 		var multiplier = 1;
 
@@ -48,7 +48,7 @@ function extract(side, formattedTerms) {
 			}
 
 			// if uppercase
-			if (t[char] = t[char].toUpperCase()) {
+			if (t[char] == t[char].toUpperCase()) {
 				sym = t[char];		// update symbol
 
 				var next = t[char + 1];		// get next character

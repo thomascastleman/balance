@@ -122,7 +122,7 @@ function Equation(string) {
 
 					if (!this.scaleValues.includes(sol[3]) && sol[3] != 1) {
 						this.scaleValues.push(sol[3]);				
-					}	
+					}
 				}
 			}
 		}
